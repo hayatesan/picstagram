@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PicStagram</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__bar">
+        <h1 class="header__bar--title"><a href="/">PicStagram</a></h1>
+        <div class="header__bar--menu">
+          <div class="header__bar--menu--btn">
+            <a class="post" href="/posts/new">投稿する</a>
+          </div>
+          <div class="header__bar--menu--btn">
+            <a class="post" href="/posts/new">投稿する</a>
+          </div>
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+      <p>
+        Copyright PicStagram 2019.
+      </p>
+    </footer>
+  </body>
+</html>
