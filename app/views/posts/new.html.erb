@@ -1,2 +1,15 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<div class="main">
+  <div class="main__container">
+    <div class="form__container">
+    <%= form_tag('/posts', method: :post) do %>
+      <h3>
+        投稿する
+      </h3>
+      <input type="text" name="name" placeholder="Nickname">
+      <input type="text" name="image" placeholder="Image Url">
+      <textarea name="text" placeholder="text" rows="10" cols="30"></textarea>
+      <input class="sent" type="submit" value="SENT">
+    <% end %>
+    </div>
+  </div>
+</div>

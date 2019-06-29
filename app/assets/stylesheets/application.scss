@@ -45,6 +45,64 @@
   }
 }
 
+.form__container{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; 
+  border: 0.05rem solid #c2c0c0;
+  h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  input {
+    padding-left: 1rem;
+    height: 3rem;
+    width: 92%;
+    margin: 0.5rem 4%;
+    border: 0.05rem solid rgb(148, 148, 148);
+  }
+  textarea {
+    height: 15rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 92%;
+    margin: 0.5rem 4%;
+    border: 0.05rem solid rgb(148, 148, 148);
+  }
+  .sent {
+    border-radius: 2rem;
+    background-color: rgb(68, 193, 224);
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+}
+
+.create__container{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; 
+  border: 0.05rem solid #c2c0c0;
+  h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+  }
+  .btn {
+    border: 0.05rem solid #0eacd3;
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #0eacd3;
+    width: 20%;
+    font-weight: bold;
+    margin: 3rem auto;
+  }
+}
+
 
 footer {
   border-top: 0.05rem solid #dbd9d9;
