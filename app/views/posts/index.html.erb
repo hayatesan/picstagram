@@ -1,65 +1,12 @@
 <div class="main">
   <div class="main__container">
-  <h1>一覧画面</h1>
 
   <% @posts.each do |post| %>
-    <%= post.name %>
-    <%= post.image %>
-    <%= post.text %>
-    <br>
+    <div class="content_post" style="background-image: url(<%= post.image %>);">
+      <%= simple_format(post.text) %>
+      <span class="name"><%= post.name %></span>
+    </div>
   <% end %>
-
-  <%= link_to '新規登録', new_post_path %>
   
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
-  <p>aaa</p>
   </div>
 </div>
